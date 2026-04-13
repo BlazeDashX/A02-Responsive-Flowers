@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faugei - Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <div class="logo">
+                <div class="nav-logo">
                     <img src="./assets/logo.png" alt="">
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li>
-                            <img src="" alt="">
-                            <a href="#">Cart ($56)</a>
-                        </li>
-                    </ul>
+                <div class="nav-menu">
+                    <a href="#Home" class="active">Home</a>
+                    <a href="#Shop">Shop</a>
+                    <a href="#AboutUs">About us</a>
+                    <a href="#"class="active"><img src="./assets/cart.png" alt="">Cart ($56)</a>
                 </div>
             </nav>
         </header>
+
         <main>
-            <section class="hero">
+            <section class="hero" id="Home">
                 <div class="hero-content">
                     <h1>ALWAYS FRESH FLOWERS</h1>
                     <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
@@ -35,7 +32,8 @@
                     <img src="./assets/hero-flower.png" alt="">
                 </div>
             </section>
-            <section class="shop">
+
+            <section class="shop" id="Shop">
                 <h2>Our Plants</h2>
                 <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
                 <div class="flower-card">
@@ -88,7 +86,7 @@
                 </div>
             </section>
 
-            <section class="plants-lover">
+            <section class="plants-lover" id="AboutUs">
                 <div class="plants-lover-content">
                     <h2>Flower & Plants Lover</h2>
                     <ul>
@@ -105,7 +103,7 @@
                 </div>
             </section>
 
-            <section class="latest-deals">
+            <section class="latest-deals" id="Deals">
                 <div class="latest-deals-content">
                     <h2>Latest Deals</h2>
                     <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -130,7 +128,7 @@
 
             </section>
 
-            <section class="newsletter">
+            <section class="newsletter" id="Contact" >
                 <div class="newsletter-image">
                     <img src="./assets/news-letter-bg.png" alt="">
                 </div>
@@ -145,7 +143,7 @@
                 </div>
             </section>
 
-            <footer>
+            <footer id="Footer">
                 <div class="footer-content">
                     <div class="footer-logo">
                         <img src="./assets/logo.png" alt="">
