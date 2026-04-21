@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <div class="px-[10%] bg-white">
-        <header>
+    <div>
+        <header class="px-[10%] bg-white">
             <nav class="flex justify-between items-center py-5">
                 <div class="flex items-center gap-2.5 ">
                     <img class="w-auto h-20" src="./assets/logo.png" alt="">
                 </div>
-                <div class="flex items-center gap-10 text-gray-500 font-weight-400 text-lg">
+                <div class="flex items-center gap-10 text-gray-400 font-weight-400 text-lg">
                     <a href="#Home" class="active">Home</a>
                     <a href="#Shop">Shop</a>
                     <a href="#AboutUs">About us</a>
@@ -27,14 +27,14 @@
             </nav>
         </header>
 
-        <main>
+        <main class="px-[10%] bg-white">
             <section class=" mx-auto flex justify-between py-20" id="Home">
                 <div class="w-1/2 flex flex-col justify-end gap-5">
                     <h1 class="font-bold text-6xl font-weight-700 leading">ALWAYS
                         <span class="text-orange-600">FRESH</span><br>
                         <span class="text-orange-600">FLOWERS</span>
                     </h1>
-                    <p class="text-xl  text-gray-500">Indulge your senses with the beauty and fragrance of our fresh
+                    <p class="text-xl  text-gray-400">Indulge your senses with the beauty and fragrance of our fresh
                         flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that
                         are perfect for any occasion.
                     </p>
@@ -49,7 +49,7 @@
                     Our
                     <span class="text-black">Plants</span>
                 </h2>
-                <p class="text-gray-500 text-xl text-center px-[10%]">
+                <p class="text-gray-400 text-xl text-center px-[10%]">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh.
                 </p>
@@ -130,97 +130,110 @@
                     <h2 class="text-5xl font-bold text-neutral-700">Flower & Plants Lover</h2>
                     <ul class="pl-5">
                         <li class="py-5 list-disc">
-                            <p class="text-gray-500 text-xl">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            <p class="text-gray-400 text-xl">Indulge your senses with the beauty and fragrance of our
+                                fresh flower shop. From classic
                                 roses to exotic blooms, we offer a wide variety of fresh.</p>
                         </li>
                         <li class="list-disc">
-                            <p class="text-gray-500 text-xl">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            <p class="text-gray-400 text-xl">Indulge your senses with the beauty and fragrance of our
+                                fresh flower shop. From classic
                                 roses to exotic blooms, we offer a wide variety of fresh.</p>
                         </li>
                         <li class="pt-5 list-disc">
-                            <p class="text-gray-500 text-xl">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                            <p class="text-gray-400 text-xl">Indulge your senses with the beauty and fragrance of our
+                                fresh flower shop. From classic
                                 roses to exotic blooms, we offer a wide variety of fresh.</p>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="latest-deals" id="Deals">
-                <div class="latest-deals-content">
-                    <h2>Latest Deals</h2>
-                    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
-                        exotic blooms, we offer a wide variety of fresh.</p>
-                </div>
-                <div class="latest-deals-cards">
-                    <div class="latest-deals-card">
-                        <img src="./assets/deal-bloom.png" alt="">
-                        <h3>60% Off | Bloom Plant</h3>
-                        <a href="#">Shop Now</a>
+            <section class="mx-auto flex flex-col justify-between py-20" id="Deals">
+                <h2 class="text-5xl font-bold pb-10 text-center text-orange-600">
+                    Latest
+                    <span class="text-black">Deals</span>
+                </h2>
+                <p class="text-gray-400 text-xl text-center px-[10%]">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    exotic blooms, we offer a wide variety of fresh.
+                </p>
+                <div class="grid grid-cols-3 grid-rows-2 gap-5 pt-30">
+                    <div class="col-span-1 relative">
+                        <img class="w-full h-full object-cover rounded-2xl" src="./assets/deal-bloom.png" alt="">
+                        <div
+                            class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                            <h3 class="text-2xl font-bold text-center">60% Off | Bloom Plant</h3>
+                            <a href="#" class="text-xl font-bold mt-4 text-center underline">Shop Now</a>
+                        </div>
                     </div>
-                    <div class="latest-deals-card">
-                        <img src="./assets/deal-ana.png" alt="">
-                        <h3>30% Off | Ana Plant</h3>
-                        <a href="#">Shop Now</a>
+                    <div class="col-span-2 row-span-2 relative ">
+                        <img class="w-full h-full object-cover rounded-2xl" src="./assets/deal-zabo.png" alt="">
+                        <div
+                            class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                            <h3 class="text-5xl font-bold text-center">25% Off | Zabo Plant</h3>
+                            <a href="#" class="text-4xl font-bold mt-4 text-center underline">Shop Now</a>
+                        </div>
                     </div>
-                    <div class="latest-deals-card">
-                        <img src="./assets/deal-zabo.png" alt="">
-                        <h3>25% Off | Zabo Plant</h3>
-                        <a href="#">Shop Now</a>
+                    <div class="col-span-1 relative">
+                        <img class="w-full h-full object-cover rounded-2xl" src="./assets/deal-ana.png" alt="">
+                        <div
+                            class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                            <h3 class="text-2xl font-bold text-center">30% Off | Ana Plant</h3>
+                            <a href="#" class="text-xl font-bold mt-4 text-center underline">Shop Now</a>
+                        </div>
                     </div>
                 </div>
 
             </section>
+        </main>
 
-            <section class="newsletter" id="Contact">
-                <div class="newsletter-image">
-                    <img src="./assets/news-letter-bg.png" alt="">
-                </div>
-                <div class="newsletter-content">
-                    <h2>Join the colorful Bunch</h2>
-                </div>
-                <div class="newsletter-form">
-                    <form action="">
-                        <input type="email" placeholder="Write email">
-                        <button type="submit">Subscribe</button>
+        <section class="" id="Contact">
+            <div class="relative">
+                <img class="w-full h-full object-cover" src="./assets/news-letter-bg.png" alt="">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                    <h2 class="text-5xl font-bold text-center pb-7.5">Join the colorful Bunch</h2>
+                    <form class="flex w-full px-[25vh]" action="post">
+                        <input class="w-full text-black bg-white p-3" type="email" placeholder="Write email">
+                        <button class="bg-orange-600 text-white text-sm px-10 py-3" type="submit">Subscribe</button>
                     </form>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <footer id="Footer">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <img src="./assets/logo.png" alt="">
-                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
-                    </div>
-                    <div class="footer-menu-core">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu-extra">
-                        <ul>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Help Center</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu-social-links">
-                        <ul>
-                            <li><img src="assets/icon-linkedin.png" alt=""></li>
-                            <li><img src="assets/icon-twitter.png" alt=""></li>
-                            <li><img src="assets/icon-facebook.png" alt=""></li>
-                            <li><img src="assets/icon-youtube.png" alt=""></li>
-                        </ul>
-                    </div>
+        <footer class="px-[10%] bg-white" id="Footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/logo.png" alt="">
+                    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
                 </div>
-            </footer>
-        </main>
+                <div class="footer-menu-core">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-extra">
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-social-links">
+                    <ul>
+                        <li><img src="assets/icon-linkedin.png" alt=""></li>
+                        <li><img src="assets/icon-twitter.png" alt=""></li>
+                        <li><img src="assets/icon-facebook.png" alt=""></li>
+                        <li><img src="assets/icon-youtube.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
