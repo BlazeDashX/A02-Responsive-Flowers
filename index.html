@@ -10,16 +10,16 @@
 
 <body>
     <div>
-        <header class="px-[10%] bg-white">
+        <header class="sm:px-[10%] px-3">
             <nav class="flex justify-between items-center py-5">
                 <div class="flex items-center gap-2.5 ">
-                    <img class="w-auto h-20" src="./assets/logo.png" alt="">
+                    <img class="w-auto h-10 sm:h-20" src="./assets/logo.png" alt="">
                 </div>
                 <div class="flex items-center gap-10 text-gray-400 font-weight-400 text-lg">
-                    <a href="#Home" class="active">Home</a>
-                    <a href="#Shop">Shop</a>
-                    <a href="#AboutUs">About us</a>
-                    <a class="flex items-center" href="#">
+                    <a href="#Home" class="text-black hidden sm:block">Home</a>
+                    <a href="#Shop" class="hidden sm:block">Shop</a>
+                    <a href="#AboutUs" class="hidden sm:block">About us</a>
+                    <a class="flex items-center text-black" href="#">
                         <img class="w-auto h-4 align-middle" src="./assets/cart.png" alt="">
                         Cart ($56)
                     </a>
@@ -27,33 +27,33 @@
             </nav>
         </header>
 
-        <main class="px-[10%] bg-white">
-            <section class=" mx-auto flex justify-between py-20" id="Home">
-                <div class="w-1/2 flex flex-col justify-end gap-5">
-                    <h1 class="font-bold text-6xl font-weight-700 leading">ALWAYS
+        <main class="sm:px-[10%]">
+            <section class="flex flex-col-reverse sm:flex-row sm:justify-between sm:py-20" id="Home">
+                <div class="w-full sm:w-1/2 flex flex-col justify-end gap-5 px-5 sm:px-0">
+                    <h1 class="font-bold text-2xl sm:text-6xl font-weight-700 leading">ALWAYS
                         <span class="text-orange-600">FRESH</span><br>
                         <span class="text-orange-600">FLOWERS</span>
                     </h1>
-                    <p class="text-xl  text-gray-400">Indulge your senses with the beauty and fragrance of our fresh
+                    <p class="sm:text-xl  text-gray-400">Indulge your senses with the beauty and fragrance of our fresh
                         flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that
                         are perfect for any occasion.
                     </p>
                 </div>
-                <div class="w-1/2 flex justify-end">
-                    <img src="./assets/hero-flower.png" class="w-full h-auto" alt="">
+                <div class="w-full sm:w-1/2 flex justify-end">
+                    <img src="./assets/hero-flower.png" class="w-full h-auto pb-5 sm:py-0" alt="">
                 </div>
             </section>
 
-            <section class="mx-auto flex flex-col justify-between py-20" id="Shop">
-                <h2 class="text-5xl font-bold pb-5 text-center text-orange-600">
+            <section class="flex flex-col justify-between py-10 sm:py-20" id="Shop">
+                <h2 class="text-2xl sm:text-5xl font-bold pb-5 text-center text-orange-600">
                     Our
                     <span class="text-black">Plants</span>
                 </h2>
-                <p class="text-gray-400 text-xl text-center px-[10%]">
+                <p class="text-gray-400 text-sm sm:text-xl text-center px-10 sm:px-[10%]">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh.
                 </p>
-                <div class="grid grid-cols-4 gap-5 pt-10">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-5 px-5 sm:px-0 pt-5 sm:pt-10">
                     <div class="flower-card">
                         <img class="w-full h-auto" src="./assets/flower.png" alt="">
                         <div class="py-7">
@@ -121,26 +121,26 @@
                 </div>
             </section>
 
-            <section class="flex justify-between items-center gap-20 py-30" id="AboutUs">
-                <div class="w-1/2 relative">
+            <section class="flex flex-col sm:flex-row justify-between items-center sm:gap-20 gap-10 sm:py-30 p-5 pb-20" id="AboutUs">
+                <div class=" w-full sm:w-1/2 relative">
                     <img src="./assets/flower-store.png" alt="">
-                    <img class=" max-h-[280px] absolute -right-20 -top-25" src="./assets/trusted-badge.png" alt="">
+                    <img class=" max-h-[280px] absolute -right-20 -top-25 hidden sm:block" src="./assets/trusted-badge.png" alt="">
                 </div>
-                <div class="w-1/2 ">
-                    <h2 class="text-5xl font-bold text-neutral-700">Flower & Plants Lover</h2>
+                <div class=" w-full sm:w-1/2 ">
+                    <h2 class="sm:text-5xl text-2xl font-bold text-neutral-700">Flower & Plants Lover</h2>
                     <ul class="pl-5">
                         <li class="py-5 list-disc">
-                            <p class="text-gray-400 text-xl">Indulge your senses with the beauty and fragrance of our
+                            <p class="text-gray-400 sm:text-xl text-base">Indulge your senses with the beauty and fragrance of our
                                 fresh flower shop. From classic
                                 roses to exotic blooms, we offer a wide variety of fresh.</p>
                         </li>
                         <li class="list-disc">
-                            <p class="text-gray-400 text-xl">Indulge your senses with the beauty and fragrance of our
+                            <p class="text-gray-400 sm:text-xl text-base">Indulge your senses with the beauty and fragrance of our
                                 fresh flower shop. From classic
                                 roses to exotic blooms, we offer a wide variety of fresh.</p>
                         </li>
                         <li class="pt-5 list-disc">
-                            <p class="text-gray-400 text-xl">Indulge your senses with the beauty and fragrance of our
+                            <p class="text-gray-400 sm:text-xl text-base">Indulge your senses with the beauty and fragrance of our
                                 fresh flower shop. From classic
                                 roses to exotic blooms, we offer a wide variety of fresh.</p>
                         </li>
@@ -149,37 +149,37 @@
             </section>
 
             <section class="mx-auto flex flex-col justify-between py-20" id="Deals">
-                <h2 class="text-5xl font-bold pb-10 text-center text-orange-600">
+                <h2 class="sm:text-5xl text-2xl font-bold sm:pb-10 pb-5 text-center text-orange-600">
                     Latest
                     <span class="text-black">Deals</span>
                 </h2>
-                <p class="text-gray-400 text-xl text-center px-[10%]">
+                <p class="text-gray-400 sm:text-xl text-base text-center sm:px-[10%] px-5">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh.
                 </p>
-                <div class="grid grid-cols-3 grid-rows-2 gap-5 pt-30">
-                    <div class="col-span-1 relative">
+                <div class="grid sm:grid-cols-3 sm:grid-rows-2 grid-rows-3 gap-5 sm:pt-30 pt-10 px-5 order-1">
+                    <div class="sm:col-span-1 relative">
                         <img class="w-full h-full object-cover rounded-2xl" src="./assets/deal-bloom.png" alt="">
                         <div
-                            class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white rounded-2xl z-10">
-                            <h3 class="text-2xl font-bold text-center">60% Off | Bloom Plant</h3>
-                            <a href="#" class="text-xl font-bold mt-4 text-center underline">Shop Now</a>
+                            class="absolute inset-0 sm:bg-black/30 bg-black/50 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                            <h3 class="sm:text-2xl text-xl font-bold text-center">60% Off | Bloom Plant</h3>
+                            <a href="#" class="sm:text-xl text-base font-bold mt-4 text-center underline">Shop Now</a>
                         </div>
                     </div>
-                    <div class="col-span-2 row-span-2 relative ">
+                    <div class="sm:col-span-2 sm:row-span-2 relative order-3 sm:order-2">
                         <img class="w-full h-full object-cover rounded-2xl" src="./assets/deal-zabo.png" alt="">
                         <div
-                            class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white rounded-2xl z-10">
-                            <h3 class="text-5xl font-bold text-center">25% Off | Zabo Plant</h3>
-                            <a href="#" class="text-4xl font-bold mt-4 text-center underline">Shop Now</a>
+                            class="absolute inset-0 sm:bg-black/30 bg-black/50 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                            <h3 class="sm:text-5xl text-xl font-bold text-center">25% Off | Zabo Plant</h3>
+                            <a href="#" class="sm:text-4xl text-base font-bold mt-4 text-center underline">Shop Now</a>
                         </div>
                     </div>
-                    <div class="col-span-1 relative">
+                    <div class="sm:col-span-1 relative order-2 sm:order-3">
                         <img class="w-full h-full object-cover rounded-2xl" src="./assets/deal-ana.png" alt="">
                         <div
-                            class="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white rounded-2xl z-10">
-                            <h3 class="text-2xl font-bold text-center">30% Off | Ana Plant</h3>
-                            <a href="#" class="text-xl font-bold mt-4 text-center underline">Shop Now</a>
+                            class="absolute inset-0 sm:bg-black/30 bg-black/50 flex flex-col justify-center items-center text-white rounded-2xl z-10">
+                            <h3 class="sm:text-2xl text-xl font-bold text-center">30% Off | Ana Plant</h3>
+                            <a href="#" class="sm:text-xl text-base font-bold mt-4 text-center underline">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -187,27 +187,28 @@
             </section>
         </main>
 
-        <section class="py-20" id="Contact">
+        <section class="sm:py-20 py-10" id="Contact">
             <div class="relative">
-                <img class="w-full h-full object-cover" src="./assets/news-letter-bg.png" alt="">
+                <img class="w-full h-full min-h-[300px] object-cover" src="./assets/news-letter-bg.png" alt="">
                 <div class="absolute inset-0 flex flex-col justify-center items-center text-white rounded-2xl z-10">
-                    <h2 class="text-5xl font-bold text-center pb-7.5">Join the colorful Bunch</h2>
-                    <form class="flex w-full px-[25vh]" action="post">
+                    <h2 class="sm:text-5xl text-2xl font-bold text-center pb-7.5">Join the colorful Bunch</h2>
+                    <form class="flex w-full px-10 sm:px-[25vh]" action="post">
                         <input class="w-full text-black bg-white p-3" type="email" placeholder="Write email">
-                        <button class="bg-orange-600 text-white text-sm px-10 py-3" type="submit">Subscribe</button>
+                        <button class="bg-orange-600 text-white text-semibold text-sm px-10 py-3" type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <footer class="px-[10%] bg-white pb-20" id="Footer">
-            <div class="grid grid-cols-[3fr_1fr_1fr_2fr] gap-[10%] ">
+        <footer class="sm:px-[10%] pb-20 p-5" id="Footer">
+            <div class="grid grid-cols-1 sm:grid-cols-[3fr_1fr_1fr_2fr] gap-5 sm:gap-[10%] ">
                 <div class="col-span-1">
-                    <img class="w-auto h-30 pb-5" src="./assets/logo.png" alt="">
-                    <p class="text-2xl text-gray-400">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+                    <img class="w-auto sm:h-20 h-27 pb-5" src="./assets/logo.png" alt="">
+                    <p class="text-base sm:text-2xl text-gray-400">Indulge your senses with the beauty and fragrance of
+                        our fresh flower shop. </p>
                 </div>
                 <div class="col-span-1 ">
-                    <div class="text-lg text-gray-500 flex flex-col gap-5 ">
+                    <div class="text-base sm:text-lg text-gray-500 flex flex-col gap-8 ">
                         <a href="#">Home</a>
                         <a href="#">About us</a>
                         <a href="#">Blog</a>
@@ -216,7 +217,7 @@
                     </div>
                 </div>
                 <div class="col-span-1 ">
-                    <div class="text-lg text-gray-500 flex flex-col gap-5 ">
+                    <div class="text-base sm:text-lg text-gray-500 flex flex-col gap-8 ">
                         <a href="#">Features</a>
                         <a href="#">Pricing</a>
                         <a href="#">Privacy Policy</a>
@@ -226,10 +227,10 @@
                 </div>
                 <div class="col-span-1">
                     <div class="flex gap-5">
-                        <img class="w-10 h-10" src="assets/icon-linkedin.png" alt="">
-                        <img class="w-10 h-10" src="assets/icon-twitter.png" alt="">
-                        <img class="w-10 h-10" src="assets/icon-facebook.png" alt="">
-                        <img class="w-10 h-10" src="assets/icon-youtube.png" alt="">
+                        <img class="w-9 h-9" src="assets/icon-linkedin.png" alt="">
+                        <img class="w-9 h-9" src="assets/icon-twitter.png" alt="">
+                        <img class="w-9 h-9" src="assets/icon-facebook.png" alt="">
+                        <img class="w-9 h-9" src="assets/icon-youtube.png" alt="">
                     </div>
                 </div>
             </div>
