@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faugei - Flower Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="container">
+<body >
+    <div class="px-[10%] bg-white">
         <header>
-            <nav>
-                <div class="nav-logo">
-                    <img src="./assets/logo.png" alt="">
+            <nav class="flex justify-between items-center py-5">
+                <div class="flex items-center gap-2.5 ">
+                    <img class="w-auto h-20" src="./assets/logo.png" alt="">
                 </div>
-                <div class="nav-menu">
+                <div class="flex items-center gap-10 text-gray-500 font-weight-400 text-lg">
                     <a href="#Home" class="active">Home</a>
                     <a href="#Shop">Shop</a>
                     <a href="#AboutUs">About us</a>
-                    <a href="#"class="active"><img src="./assets/cart.png" alt="">Cart ($56)</a>
+                    <a class="flex items-center" href="#">
+                        <img class="w-auto h-4 align-middle" src="./assets/cart.png" alt="">
+                        Cart ($56)
+                    </a>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section class="hero" id="Home">
-                <div class="hero-content">
-                    <h1>ALWAYS FRESH FLOWERS</h1>
-                    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            <section class=" mx-auto flex justify-between py-20" id="Home">                
+                <div class="w-1/2 flex flex-col justify-end gap-5">
+                    <h1 class="font-bold text-6xl font-weight-700 leading">ALWAYS 
+                        <span class="text-orange-600">FRESH</span><br>
+                        <span class="text-orange-600">FLOWERS</span>
+                    </h1>
+                    <p class="text-xl  text-gray-500">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                    </p>
                 </div>
-                <div class="hero-image">
-                    <img src="./assets/hero-flower.png" alt="">
+                <div class="w-1/2 flex justify-end">
+                    <img src="./assets/hero-flower.png" class="w-full h-auto" alt="">
                 </div>
             </section>
 
-            <section class="shop" id="Shop">
-                <h2>Our Plants</h2>
+            <section class="mx-auto flex flex-col justify-between py-20" id="Shop">
+                <h2>Our <span>Plants</span></h2>
                 <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
                 <div class="flower-card">
                     <img src="./assets/flower.png" alt="">
